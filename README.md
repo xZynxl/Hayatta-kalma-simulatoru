@@ -16,5 +16,4 @@ Simülasyon aşağıdaki tuş komutları ile yönetilir:
 * **F (Tehlike):** Aniden bir tehlike başlatır.
 * **P (Şifreli İlerleme):** Rastgele oluşturulan bir şifreyi geçmeniz gerekir.
 * **X (Çıkış):** Oyundan çıkmak içindir.
-* **F# Hayatta-kalma-simulatoru
 Algoritma ve Programlama dersi için C dili ile geliştirilmiş Hayatta-kalma-simulatoru
