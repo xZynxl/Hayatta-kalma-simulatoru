@@ -44,5 +44,6 @@ Bu proje, C dilinin temel yapı taşlarını kullanarak oluşturulmuştur:
 3.  Kodu derleyin ve çalıştırın (Compile & Run).
 
 ---
-*Geliştirici: [Adın Soyadın]*
+*Geliştirici: Mehmet Berke Ünlütürk*
+*Yardım alınan yapay zeka: Gemini*
 *Ders: Algoritma ve Programlama*
