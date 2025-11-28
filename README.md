@@ -13,7 +13,36 @@ Simülasyon aşağıdaki tuş komutları ile yönetilir:
 * **S (Sığınak Ara):** Enerji harcayarak sığınak arar. Sığınak varsa dinlenir.
 * **R (Dinlen):** Yemek yiyerek sağlık ve enerjiyi yeniler.
 * **E (Envanter):** Anlık sağlık, enerji, yemek ve puan durumunu gösterir.
-* **F (Tehlike):** Aniden bir tehlike başlatır.
-* **P (Şifreli İlerleme):** Rastgele oluşturulan bir şifreyi geçmeniz gerekir.
-* **X (Çıkış):** Oyundan çıkmak içindir.
-Algoritma ve Programlama dersi için C dili ile geliştirilmiş Hayatta-kalma-simulatoru
+* **F (Tehlike Simülasyonu):** Bölgedeki tehlikeli olayları (fırtına vb.) simüle eder.
+* **P (Şifreli İlerleme):** Rastgele çıkan şifreyi çözerek bir engeli aşmaya çalışır.
+* **X (Çıkış):** Simülasyonu sonlandırır.
+
+## 🛠 Teknik Detaylar ve Kullanılan C Yapıları
+
+Bu proje, C dilinin temel yapı taşlarını kullanarak oluşturulmuştur:
+
+### 1. Döngüler (Loops)
+* **DO-WHILE Döngüsü:** Oyunun ana döngüsünü oluşturur. Oyuncu 'X' tuşuna basana kadar veya karakter ölene kadar oyunun devam etmesini sağlar.
+* **FOR Döngüsü:** `F` komutunda kullanılır. Belirli bir süre (tur sayısı) boyunca devam eden bir tehlike dalgasını simüle eder.
+* **İç İçe DO-WHILE:** `P` (Şifre) komutunda, oyuncu doğru şifreyi girene kadar döngünün devam etmesi için kullanılmıştır.
+
+### 2. Karar Yapıları (Decision Making)
+* **SWITCH-CASE:** Kullanıcının girdiği komutları (A, S, R...) hızlı ve düzenli bir şekilde yönetmek için kullanılmıştır.
+* **IF-ELSE:** Oyun içindeki koşulları kontrol eder. (Örn: `if (enerji >= 15)` avlanmak için yeterli enerji var mı?)
+
+### 3. Operatörler
+* **Aritmetik Operatörler:** Kaynak tüketimi ve kazanımı (`enerji -= 15`, `saglik += 10`) için kullanılmıştır.
+* **Mantıksal Operatörler (&&, ||):** `A` komutunda yaralanma riskini hesaplarken veya `S` komutunda sığınak kurma şartlarını (yemek var VE sığınak yok) kontrol ederken kullanılmıştır.
+
+### 4. Rastgelelik (Randomness)
+* `rand()` ve `srand(time(NULL))` fonksiyonları ile oyunun her açılışta farklı senaryolar (farklı yemek sayısı, şifreler, riskler) üretmesi sağlanmıştır.
+
+## 🚀 Kurulum ve Çalıştırma
+
+1.  Bu projeyi bilgisayarınıza indirin veya kopyalayın.
+2.  Bir C derleyicisi (Dev-C++, GCC, Code::Blocks) ile `main.c` dosyasını açın.
+3.  Kodu derleyin ve çalıştırın (Compile & Run).
+
+---
+*Geliştirici: [Adın Soyadın]*
+*Ders: Algoritma ve Programlama*
