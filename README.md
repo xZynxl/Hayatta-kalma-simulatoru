@@ -13,5 +13,8 @@ Simülasyon aşağıdaki tuş komutları ile yönetilir:
 * **S (Sığınak Ara):** Enerji harcayarak sığınak arar. Sığınak varsa dinlenir.
 * **R (Dinlen):** Yemek yiyerek sağlık ve enerjiyi yeniler.
 * **E (Envanter):** Anlık sağlık, enerji, yemek ve puan durumunu gösterir.
+* **F (Tehlike):** Aniden bir tehlike başlatır.
+* **P (Şifreli İlerleme):** Rastgele oluşturulan bir şifreyi geçmeniz gerekir.
+* **X (Çıkış):** Oyundan çıkmak içindir.
 * **F# Hayatta-kalma-simulatoru
 Algoritma ve Programlama dersi için C dili ile geliştirilmiş Hayatta-kalma-simulatoru
